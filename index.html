@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
+        <script src="https://use.fontawesome.com/a91fa5717a.js"></script>
         <link rel="stylesheet" href="css/index.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    
+        <script src="https://kit.fontawesome.com/81c2c05f29.js" ></Script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <title>webpage</title>
     </head>
     <body>
         <div id="container">
-
             <div class="left">
                 <div class="menu">
-                    <div class="x"><i class="fas fa-align-left"></i></div>
-                    <div class="y"><i class="fas fa-search"></i></div>
+                    <div class="x">
+                        <a class="search-btn1" href="#">
+                        <i class="fas fa-align-left"></i></a></div>
+                    <div class="y">
+                        <div class="search-box">
+                        <input class= "search-txt" type="text" placeholder="Search..." id="mysearch">
+                        <a class="search-btn" href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                        </div>
                 </div>
+            </div>
                 <div class="middle-image"></div>
             </div>
             <div class="right">
@@ -42,7 +53,7 @@
 
                         <div class="read-more">
                         <p>Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></p></div>
-                        <div class="sub">
+                        <div class="sub"><br><br><br>
                             <h4>Subscribe to our Newsletter</h4>
                             <input type="text" id="text" placeholder="Enter your Email">
                             <input type="submit" id="submit">
@@ -59,6 +70,8 @@
           $('nav').toggleClass('active')
         })
      })
- </script>
+    </script>
+    <script src="javascript/main.js"></script> 
+    
  </body>    
 </html>
