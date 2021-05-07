@@ -19,6 +19,32 @@
       border:2px rgb(26, 20, 20);
       box-shadow: 1px 1px 11px 1px rgb(26, 20, 20);
   }
+  .menu{
+      display: flex;
+      padding: 30px;
+      margin: -10px;
+      line-height: 50px;
+      align-items: center;
+      width: 100%;
+      float: right;   
+  }
+  .menu .y{
+      width: 50%;  
+      text-align: right;
+      cursor: pointer;
+  }
+  .menu .x
+  {
+      width: 50%;
+      cursor: pointer;
+  }
+  .menu .y :hover{
+      background-color: azure;
+  }
+  .menu .x :hover{
+    background-color: azure;
+}
+
   .right{
     width: 60vw;
     background-color: #fff;
@@ -52,8 +78,7 @@
 }
  nav ul li{
     list-style: none;
-    margin-right: 10px;
-    
+    margin-right: 10px;  
 }
  nav ul li a{
     height: 50px;
@@ -64,7 +89,6 @@
     text-decoration: none;
     display: block;    
 }
-
  nav ul li a:hover
 {
     color: #fff;
@@ -75,12 +99,9 @@
     float: right;
     line-height: 50px;
     cursor: pointer;
-    display: none;
-    
+    display: none; 
 }
 @media screen and (max-width:767.98px) {
-    
-
     .menu-toggle{
         display: block;
     }
@@ -95,7 +116,6 @@
          left: -100%;
          transition: 0.5s;
          font-size: 30px;
-
     }  
     nav.active{
         left: 0;
@@ -106,11 +126,8 @@
     }
      nav ul li a{
         border-bottom: 1px solid rgba(0,0,0, .2);
-    }
-    
+    }   
 }
-
-
 #fashion {
     min-height: 100vh;
     display: flex;
@@ -118,25 +135,18 @@
     padding: 1px 100px;
     width: 95%;
     background-color: #fff;
-    float: right;
-   
+    float: right; 
 }
 #container .left1{
     position: relative;
     margin: 0 auto;
-    width: 30vw;
-    
-    
+    width: 30vw; 
 }
 #fashion .right2{
   width: 70vw;
   background-color: #fff;
-  
-  
 }
-
 #fashion span{
-
     background-color: rgb(131, 130, 130);
     color: #fff;
     font-size: 22px;
