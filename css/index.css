@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   #container {
@@ -18,51 +20,98 @@
       margin: 0 auto;
       border:2px rgb(26, 20, 20);
       box-shadow: 1px 1px 11px 1px rgb(26, 20, 20);
+      
   }
   .menu{
       display: flex;
-      padding: 30px;
-      margin: -10px;
+      padding: 10px;
+      margin-left: 0px;
+      margin-right: 0px;
       line-height: 50px;
-      align-items: center;
       width: 100%;
-      float: right;   
+      float: right;      
   }
-  .menu .y{
-      width: 50%;  
-      text-align: right;
+  .y{
+      width: 75%;
+      
+  }
+
+.search-box{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background:  #fda706 ;
+    height: 40px;
+    border-radius:40px;
+    padding: -1px;
+    width: 80%;
+}
+ .search-btn{
+    color: rgb(248, 212, 9);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 8px;
+    color:#fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.search-box :hover > .search-txt{
+    width: 200;
+    padding: 0 6px;
+}
+
+  .menu .x  {
       cursor: pointer;
+      width: 25%;
+      
   }
-  .menu .x
-  {
-      width: 50%;
-      cursor: pointer;
-  }
-  .menu .y :hover{
-      background-color: azure;
-  }
+  
+    .search-btn1{
+        color: rgb(248, 212, 9);
+        float: left;
+        width: 40px;
+        height: 40px;
+        
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   .menu .x :hover{
     background-color: azure;
 }
-
   .right{
     width: 60vw;
     background-color: #fff;
-    box-shadow: 1px 1px 11px 1px rgb(26, 20, 20);
-    
+    box-shadow: 1px 1px 11px 1px rgb(26, 20, 20)
 }
+
  .middle-image{
-     width: 30em;
-     height: 25em;
-     
+     width: 25em;
+     height: 30em;
      background-image: url(../images/2.jpeg);
      background-color: rgb(204, 196, 196);
      background-position:center;
      position: absolute;
+     box-shadow:1px 1px 10px 1px rgb(126, 119, 119);
      top:50%;
-     right: -16em;
-     transform: translateY(-50%);
-
+     right: -14em;
+     transform: translateY(-50%)
  }
 
  nav{
@@ -166,7 +215,7 @@
     cursor: pointer;
 }
 #fashion .sub{
-    padding-top: 90px;
+    padding-top: 160px;
 }
 
 #fashion .sub input[type="text"]{
