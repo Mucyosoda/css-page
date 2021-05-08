@@ -25,30 +25,39 @@
   .menu{
       display: flex;
       padding: 10px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
       margin-left: 0px;
-      margin-right: 0px;
+      margin-right:0px;
       line-height: 50px;
       width: 100%;
-      float: right;      
-  }
+      background-color: #fda706;  
+      height: 100%; 
+  } 
+  
   .y{
-      width: 75%;
+      width: 80%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background: #fda706;
+      border: 4px #333;
       
   }
 
 .search-box{
     position: absolute;
-    top: 5%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background:  #fda706 ;
+    top: 2%;
+    background: #2f3640 ;
     height: 40px;
     border-radius:40px;
-    padding: -1px;
-    width: 80%;
+    width: 75%;
+    
+    
 }
  .search-btn{
-    color: rgb(248, 212, 9);
+    color: #fda706;
     float: right;
     width: 40px;
     height: 40px;
@@ -57,31 +66,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+ }
 .search-txt{
     border: none;
-    background: none;
+    background: #2f3640;
     outline: none;
-    float: left;
-    padding: 0 8px;
+    float: center;
+    padding-top: 7px;
     color:#fff;
     font-size: 16px;
     transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+    line-height: 20px;
+    width: 190px;
+    margin-left: 19px;
+    
 }
 .search-box :hover > .search-txt{
     width: 200;
     padding: 0 6px;
 }
-
   .menu .x  {
       cursor: pointer;
-      width: 25%;
+      width: 20%;
+      background-color: #fda706;
+      height: 100%;
+      margin-top: 5px;
+      
       
   }
   
-    .search-btn1{
+   .search-btn1{
         color: rgb(248, 212, 9);
         float: left;
         width: 40px;
@@ -91,7 +105,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        line-height: 5px;
     }
+    
   .menu .x :hover{
     background-color: azure;
 }
@@ -113,6 +129,7 @@
      right: -14em;
      transform: translateY(-50%)
  }
+ 
 
  nav{
     float: right;
@@ -241,6 +258,6 @@
     -webkit-transition: .3s;
     transition: .3s;
     color: #fda706;
-    background-color: #fff;
+    background-color: rgb(58, 57, 57);
     
   }
