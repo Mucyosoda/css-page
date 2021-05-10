@@ -42,48 +42,7 @@
       padding: 0;
       margin: 0;
       background: #fda706;
-      border: 4px #333;
-      
-  }
-
-.search-box{
-    position: absolute;
-    top: 2%;
-    background: #2f3640 ;
-    height: 40px;
-    border-radius:40px;
-    width: 75%;
-    
-    
-}
- .search-btn{
-    color: #fda706;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-.search-txt{
-    border: none;
-    background: #2f3640;
-    outline: none;
-    float: center;
-    padding-top: 7px;
-    color:#fff;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 190px;
-    margin-left: 19px;
-    
-}
-.search-box :hover > .search-txt{
-    width: 200;
-    padding: 0 6px;
+      border: 4px #333;  
 }
   .menu .x  {
       cursor: pointer;
@@ -91,8 +50,6 @@
       background-color: #fda706;
       height: 100%;
       margin-top: 5px;
-      
-      
   }
   
    .search-btn1{
@@ -129,8 +86,6 @@
      right: -14em;
      transform: translateY(-50%)
  }
- 
-
  nav{
     float: right;
     padding: 30px;
@@ -260,4 +215,83 @@
     color: #fda706;
     background-color: rgb(58, 57, 57);
     
+  }
+
+
+  .searchbox__icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .searchbox__icon path,
+  .searchbox__icon polygon,
+  .searchbox__icon rect {
+    fill: #4691f6;
+  }
+  
+  .searchbox__icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+    .searchbox{
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 53px;
+        transition: 0.4s linear;
+        overflow: hidden;
+       
+  }
+  .searchbox__input{
+      display: block;
+      appearance: none;
+      width: 100%;
+
+      border: none;
+      outline: none;
+      border-radius: 50px;
+
+      background-color: #24233A;
+
+      padding: 15px;
+      color: #24233A;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.4s linear;
+  }
+
+ ::placeholder{
+     color:#24233A;
+ }
+ .searchbox__icon{
+    position:absolute;
+    right: calc(65px);
+    top: 30px;
+    transform: translate(50px, -50%);
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+.searchbox .searchbox__icon path{
+    fill: rgb(248, 212, 9);
+    
+    transition: 0.4s linear;
+  }
+  path:focus-within{
+    max-width: 300px;
+  }
+
+  .container :focus-within{
+      max-width: 300px;
+  }
+  .container :focus-within .searchbox__input{
+      background-color: #fff;
+      padding-right: 50px;
+      box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
   }
